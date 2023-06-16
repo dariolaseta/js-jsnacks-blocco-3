@@ -1,24 +1,19 @@
 <template>
     <header>
         <nav>
-            <ul>
-                <li>
-                    <a href="#">Cibo per gatti</a>
-                </li>
-                <li>
-                    <a href="#">Cibo per cani</a>
-                </li>
-                <li>
-                    <a href="#">Cibo per Pokémon</a>
-                </li>
-            </ul>
+            <NavLink />
         </nav>
     </header>
 </template>
 
 <script>
-export default {
+import NavLink from "./NavLink.vue"
 
+export default {
+    name: "AppHeader",
+    components:{
+        NavLink
+    }
 }
 </script>
 
